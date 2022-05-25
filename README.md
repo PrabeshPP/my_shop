@@ -1,16 +1,5 @@
-# my_shop
+# Flutter UI Challenge
 
-A new Flutter project.
+This repository is inspired from mobile app templates found on flutterawesome.com.If the author of this template does not permit to use the images and design concepts ,I would be happy to take this repository down.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Credit to:Roberto Juarez
