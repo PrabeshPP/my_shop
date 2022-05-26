@@ -8,7 +8,7 @@ class Page3 extends StatelessWidget {
     Size size = MediaQuery.of(context).size;
     String headlineText = "Shipping to anywhere";
     String bodyText =
-        "We will shipt to anywhere in the world.With 30 days 100% money back policy";
+        "We will shipt to anywhere in the world.With 30 days 100% money back policy.";
     return Scaffold(
       extendBodyBehindAppBar: true,
       body: Stack(
@@ -61,7 +61,7 @@ Widget textWidget(double width, String text, TextStyle txtStyle) {
     child: Text(
       text,
       style: txtStyle,
-      textDirection: TextDirection.rtl,
+      textAlign: TextAlign.end,
     ),
   );
 }

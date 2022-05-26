@@ -8,7 +8,7 @@ class Page2 extends StatelessWidget {
     Size size = MediaQuery.of(context).size;
     String headlineText = "On-time delivery";
     String bodyText =
-        "You can track your product with out powerful tracking service";
+        "You can track your product with out powerful tracking service.";
     return Scaffold(
       extendBodyBehindAppBar: true,
       body: Stack(
@@ -61,7 +61,7 @@ Widget textWidget(double width, String text, TextStyle txtStyle) {
     child: Text(
       text,
       style: txtStyle,
-      textDirection: TextDirection.rtl,
+      textAlign: TextAlign.end,
     ),
   );
 }

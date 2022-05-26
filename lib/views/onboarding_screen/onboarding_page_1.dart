@@ -62,7 +62,7 @@ Widget textWidget(double width, String text, TextStyle txtStyle) {
     child: Text(
       text,
       style: txtStyle,
-      textDirection: TextDirection.rtl,
+      textAlign: TextAlign.end,
     ),
   );
 }
