@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:my_shop/utils/theme.dart';
-import 'package:my_shop/views/onboarding_screen/onboarding_page_2.dart';
-import 'package:my_shop/views/onboarding_screen/onboarding_page_3.dart';
+import 'package:my_shop/view_model/cubit/page_cubit.dart';
+import 'package:my_shop/views/onboarding_page.dart';
 
 void main() {
   runApp(
@@ -16,7 +17,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const Page3(),
+      home:  BlocProvider<PageCubit>(
+        create: (context) => PageCubit(),
+        child:const  OnBoardinPage(),
+      ),
       themeMode: ThemeMode.light,
       theme: MyAppTheme.lightTheme(),
     );
