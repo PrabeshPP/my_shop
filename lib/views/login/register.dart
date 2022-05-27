@@ -1,10 +1,8 @@
-import 'dart:ui';
 
-import 'package:flutter/cupertino.dart';
+
+
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:google_fonts/google_fonts.dart';
+
 
 class RegisterPage extends StatelessWidget {
   const RegisterPage({Key? key}) : super(key: key);
@@ -55,24 +53,51 @@ class RegisterPage extends StatelessWidget {
               height: size.height * 0.3,
               width: size.width * 0.95,
               color: Colors.white.withOpacity(0.85),
+              child: Column(
+                children: [
+                  Padding(
+                    padding:  EdgeInsets.symmetric(horizontal: size.width*0.1),
+                    child: const TextField(
+                      decoration: InputDecoration(
+                        hintText: "example@gmai.com",
+                        contentPadding:EdgeInsets.all(0) 
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding:  EdgeInsets.symmetric(horizontal: size.width*0.1),
+                    child: const TextField(
+                      decoration: InputDecoration(
+                        hintText: "password",
+                        contentPadding:EdgeInsets.all(0) 
+                      ),
+                    ),
+                  ),
+                ],
+              ),
             ),
           ),
           Positioned(
             top: size.height * 0.53,
             left: size.width * 0.2,
-            child: Container(
-              height: size.height * 0.07,
-              width: size.width * 0.6,
-              decoration: BoxDecoration(
-                  color: const Color.fromARGB(255, 255, 0, 0),
-                  borderRadius: BorderRadius.circular(8.0)),
-              child: Center(
-                child: Text(
-                  "Log in",
-                  style: Theme.of(context).textTheme.headline6!.copyWith(
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white,
-                      fontFamily: fontFam),
+            child: InkWell(
+              onTap: (){
+
+              },
+              child: Container(
+                height: size.height * 0.07,
+                width: size.width * 0.6,
+                decoration: BoxDecoration(
+                    color: const Color.fromARGB(255, 255, 0, 0),
+                    borderRadius: BorderRadius.circular(8.0)),
+                child: Center(
+                  child: Text(
+                    "Log in",
+                    style: Theme.of(context).textTheme.headline6!.copyWith(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                        fontFamily: fontFam),
+                  ),
                 ),
               ),
             ),
