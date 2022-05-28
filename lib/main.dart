@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:my_shop/utils/theme.dart';
 import 'package:my_shop/view_model/cubit/page_cubit.dart';
+import 'package:my_shop/views/home/home_page.dart';
 import 'package:my_shop/views/login/register.dart';
 
 
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home:  BlocProvider<PageCubit>(
         create: (context) => PageCubit(),
-        child:const RegisterPage(),
+        child:HomePage(),
       ),
       themeMode: ThemeMode.light,
       theme: MyAppTheme.lightTheme(),
